@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h3>Hello and Welcome to the Dojo Survey Form</h3>
+    <div class="container">
+      <form action="/results" method="post">
+        <div class="control">
+          <label for="name">Name</label>
+          <input type="text" name="name">
+        </div>
+        <div class="control">
+          <label for="location">Dojo Location</label>
+          <select name="location">
+            <option value="Dallas">Washington DC</option>
+            <option value="Dallas">Dallas</option>
+            <option value="Seattle">Seattle</option>
+            <option value="California">California</option>
+            <option value="New York">New York</option>
+          </select>
+        </div>
+        <div class="control">
+          <label for="language">Favorite Language</label>
+          <select name="language">
+            <option value="Java">Java</option>
+            <option value="C#">C#</option>
+            <option value="Javascript">JavaScript</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="PHP">PHP</option>
+          </select>
+        </div>
+        <div class="control">
+          <label for="comments">Comment (Optional)</label>
+          <textarea name="comments" rows="6" cols="40"></textarea>
+        </div>
+        <div class="control">
+          <input type="submit"value="Submit">
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
